@@ -63,6 +63,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v5
+      - uses: databricks/setup-cli@v0.221.0
         with:
           python-version: 3.8
       - name: Run Feature Engineering Workflow for Test Deployment Target in Staging Workspace
