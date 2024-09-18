@@ -20,7 +20,7 @@
 # List of input args needed to run the notebook as a job.
 # Provide them via DB widgets or notebook arguments.
 #
-# Name of the current environment
+# Name of the current environment - adding to start cicd trigger
 dbutils.widgets.dropdown("env", "dev", ["dev", "staging", "prod"], "Environment Name")
 # A Hive-registered Delta table containing the input features.
 dbutils.widgets.text("input_table_name", "", label="Input Table Name")
