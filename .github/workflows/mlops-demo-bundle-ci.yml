@@ -85,7 +85,7 @@ jobs:
         uses: actions/github-script@v6
         id: comment
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.cicd-token }}
           script: |
             const fs = require('fs');
             const fileContents = fs.readFileSync('validate_output.txt', 'utf8');
